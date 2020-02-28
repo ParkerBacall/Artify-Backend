@@ -4,6 +4,11 @@ const jwt = require('jsonwebtoken')
 const SECRET = "fuckboi"
 
 module.exports = {
+    gene: {
+       listAll(){
+            return database('gene')
+       } 
+    },
     user: {
         create: (user) => {
             return bcrypt.hash(user.password, 10)

@@ -6,7 +6,7 @@ const cors = require('cors')
 const user = require('./routes/user')
 const login = require('./routes/login')
 const gene = require('./routes/gene')
-const art = require('./routes/art')
+const artist = require('./routes/artist')
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -18,5 +18,5 @@ app.listen(PORT)
 app.use(user)
 app.use(login)
 app.use(gene)
-app.use(art)
+app.use(artist)
 

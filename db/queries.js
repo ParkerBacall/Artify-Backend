@@ -4,10 +4,16 @@ const jwt = require('jsonwebtoken')
 const SECRET = "fuckboi"
 
 module.exports = {
-    gene: {
+    genre: {
        listAll(){
-            return database('gene')
-       } 
+            return database('genre')
+       } ,
+       create(input){
+        return database('genre')
+        .insert(input)
+         .returning('*')
+       }
+
     },
     user: {
         create: (user) => {

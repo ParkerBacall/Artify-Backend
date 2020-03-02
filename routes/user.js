@@ -14,11 +14,9 @@ router.get("/users",  (request, response) =>{
     }else{
         const token = request.headers.authorization.split(" ")[1]
         jwt.verify(token, SECRET, async (error, decodedToken)=>{
-            const user = decodedToken
-            const genes = await User.relatedQuery('genre')
-            .for(user)
-            console.log(genes)
-            response.send(decodedToken)
+            const user = await User.query().withGraphFetched('genre')
+            .where('user.id', decodedToken.id)
+            response.send(user[0])
         })
     }
 })

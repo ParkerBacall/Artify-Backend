@@ -6,6 +6,7 @@ const cors = require('cors')
 const user = require('./routes/user')
 const login = require('./routes/login')
 const artist = require('./routes/artist')
+const genre = require('./routes/genre')
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -17,4 +18,5 @@ app.listen(PORT)
 app.use(user)
 app.use(login)
 app.use(artist)
+app.use(genre)
 

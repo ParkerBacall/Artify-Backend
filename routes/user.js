@@ -4,7 +4,7 @@ const queries = require('../db/queries')
 const jwt =require('jsonwebtoken')
 const SECRET = "fuckboi"
 
-const { User } = require('../models/schema')
+const { User, Artist } = require('../models/schema')
 
 
 
@@ -14,7 +14,9 @@ router.get("/users",  (request, response) =>{
     }else{
         const token = request.headers.authorization.split(" ")[1]
         jwt.verify(token, SECRET, async (error, decodedToken)=>{
-            const user = await User.query().withGraphFetched('genre')
+            const user = await User.query()
+            .withGraphFetched('artists')
+            .withGraphFetched('genre')
             .where('user.id', decodedToken.id)
             response.send(user[0])
         })

@@ -18,9 +18,28 @@ class Genre extends Model {
           relation: Model.BelongsToOneRelation,
           modelClass: User,
           join: {
-            from: 'genre.ideas_id',
+            from: 'genre.user_id',
             to: 'user.id'
-          }
+          },
+        }
+      }
+    }
+  }
+
+  class Artist extends Model {
+    static get tableName () {
+      return 'artists'
+    }
+  
+    static get relationMappings () {
+      return {
+        User: {
+          relation: Model.BelongsToOneRelation,
+          modelClass: User,
+          join: {
+            from: 'artist.user_id',
+            to: 'user.id'
+          },
         }
       }
     }
@@ -40,9 +59,18 @@ class Genre extends Model {
             from: 'user.id',
             to: 'genre.user_id'
           }
+        },
+          artists: {
+            relation: Model.HasManyRelation,
+            modelClass: Artist,
+            join: {
+              from: 'user.id',
+              to: 'artists.user_id'
+            }
+          }
         }
       }
     }
-  }
 
-  module.exports = { User, Genre }
+
+  module.exports = { User, Genre, Artist }

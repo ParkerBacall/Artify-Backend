@@ -11,9 +11,30 @@ module.exports = {
        create(input){
         return database('genre')
         .insert(input)
-         .returning('*')
-       }
-
+        .returning('*')
+       },
+       delete(request){
+        return database('genre')
+          .where({name: request.name, user_id: request.user_id})
+          .delete()
+          .returning('*')
+      },
+    },
+    artists: {
+       listAll(){
+            return database('artists')
+       } ,
+       create(input){
+        return database('artists')
+        .insert(input)
+        .returning('*')
+       },
+       delete(request){
+        return database('artists')
+          .where({name: request.name, user_id: request.user_id})
+          .delete()
+          .returning('*')
+        },
     },
     user: {
         create: (user) => {

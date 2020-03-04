@@ -5,8 +5,8 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const user = require('./routes/user')
 const login = require('./routes/login')
-const artist = require('./routes/artist')
 const genre = require('./routes/genre')
+const artists = require('./routes/artists')
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -14,9 +14,8 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.listen(PORT)
-
+app.use(artists)
 app.use(user)
 app.use(login)
-app.use(artist)
 app.use(genre)
 

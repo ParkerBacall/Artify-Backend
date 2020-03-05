@@ -1,7 +1,7 @@
 const database = require('./database')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const SECRET = "fuckboi"
+const SECRET = "fuckboi" || process.env['SECRET_KEY_BASE']
 
 module.exports = {
     genre: {

@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 const queries = require('../db/queries')
 const jwt =require('jsonwebtoken')
-const SECRET = "fuckboi"
+const SECRET = "fuckboi" || process.env['SECRET_KEY_BASE']
 
-const { User, Artist } = require('../models/schema')
+const { User } = require('../models/schema')
 
 
 

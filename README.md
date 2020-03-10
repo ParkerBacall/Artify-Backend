@@ -13,7 +13,7 @@ if you are interested check out https://developers.artsy.net/
     1. From here you can log in or make a new user
     1. Wether you log in or create a new user you will be logged in as you user and redirect to the genre page
 1. Cloning
-    1. If you want to clone this repo make sure you clone the frontend also
+    1. If you want to clone this repo make sure you clone the [frontend](https://github.com/ParkerBacall/art-app-frontend) also
     1. Run npm install on the frontend and then run npm run serve to start the server on port 8080
     1. On the backend youu can run npm start
 
@@ -47,10 +47,14 @@ if you are interested check out https://developers.artsy.net/
 
 ![Screen Shot 2020-03-05 at 2 48 36 PM](https://user-images.githubusercontent.com/17993120/76029054-fdb6d080-5ef0-11ea-89dc-cc402c4843f2.png)
 
+
+
 1. Inpiration page
     1. Everytime you navigate to the inpiration page you will be shown a random artwork from the api
     1. The idea behind this page is that it could expand the art you are exposed to and you could use something from this art to expand yourself as an artist
     
     ![Screen Shot 2020-03-05 at 2 48 45 PM](https://user-images.githubusercontent.com/17993120/76029091-0d361980-5ef1-11ea-9499-3916053fc8ca.png)
+    
+Check out this [video](https://www.youtube.com/watch?v=_lFhV_AhmAk) showing off the functionality the app!
 
     

@@ -7,7 +7,7 @@ if you are interested check out https://developers.artsy.net/
 ### Run Instructions and Overview:
 
 1. This app is deployed!
-    1. Navigate to https://artify-frontend.firebaseapp.com/
+    1. Navigate to https://artify-frontend.firebaseapp.com/{:target="_blank"}
     1. When the page loads you will be on the login page
     1. Click the login text in the header and the login menu will open
     1. From here you can log in or make a new user
@@ -55,6 +55,6 @@ if you are interested check out https://developers.artsy.net/
     
     ![Screen Shot 2020-03-05 at 2 48 45 PM](https://user-images.githubusercontent.com/17993120/76029091-0d361980-5ef1-11ea-9499-3916053fc8ca.png)
     
-Check out this [video](https://youtu.be/QYfIZ3qu4Eo) showing off the functionality the app!
+Check out this [video](https://youtu.be/QYfIZ3qu4Eo){:target="_blank"} showing off the functionality the app!
 
     

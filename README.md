@@ -13,7 +13,7 @@ if you are interested check out https://developers.artsy.net/
     1. From here you can log in or make a new user
     1. Wether you log in or create a new user you will be logged in as you user and redirect to the genre page
 1. Cloning
-    1. If you want to clone this repo make sure you clone the [frontend](https://github.com/ParkerBacall/art-app-frontend){:target="_blank"} also
+    1. If you want to clone this repo make sure you clone the [frontend](https://github.com/ParkerBacall/art-app-frontend) also
     1. Run npm install on the frontend and then run npm run serve to start the server on port 8080
     1. On the backend youu can run npm start
 

@@ -55,6 +55,6 @@ if you are interested check out https://developers.artsy.net/
     
     ![Screen Shot 2020-03-05 at 2 48 45 PM](https://user-images.githubusercontent.com/17993120/76029091-0d361980-5ef1-11ea-9499-3916053fc8ca.png)
     
-Check out this [video](https://www.youtube.com/watch?v=_lFhV_AhmAk) showing off the functionality the app!
+Check out this [video](https://youtu.be/QYfIZ3qu4Eo) showing off the functionality the app!
 
     

@@ -13,7 +13,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.listen(PORT)
+app.listen(PORT, () => {
+    console.log(`app running on port ${PORT}`)
+})
 app.use(artists)
 app.use(user)
 app.use(login)

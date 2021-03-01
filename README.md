@@ -15,7 +15,7 @@ if you are interested check out https://developers.artsy.net/
 1. Cloning
     1. If you want to clone this repo make sure you clone the [frontend](https://github.com/ParkerBacall/art-app-frontend) also
     1. Run npm install on the frontend and then run npm run serve to start the server on port 8080
-    1. On the backend youu can run npm start
+    1. On the backend you can run npm start
 
 ### Using Artify 
 

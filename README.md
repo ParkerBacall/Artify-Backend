@@ -1,6 +1,6 @@
 ![Screen Shot 2020-03-05 at 9 51 12 AM](https://user-images.githubusercontent.com/17993120/76025035-5b471f00-5ee9-11ea-962c-2f75bdc9acaf.png)
 
-This app uses Artsy's api and is an app for artists to explore new art and find inspiration\
+This app uses Artsy's api and is an app for artists to explore new art and find inspiration
 
 if you are interested check out https://developers.artsy.net/
 
